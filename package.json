@@ -3,13 +3,10 @@
   "version": "0.1.0",
   "author": "Jaid <jaid.jsx@gmail.com> (https://github.com/Jaid)",
   "dependencies": {
-    "@absolunet/fss": "^1.6.2",
-    "@babel/runtime": "^7.9.2",
-    "appdata-path": "^1.0.0",
-    "filenamify": "^4.1.0",
-    "lodash": "^4.17.15"
+    "@babel/runtime": "^7.9.2"
   },
   "devDependencies": {
+    "@absolunet/fsp": "^1.6.2",
     "acorn": "^7.1.1",
     "babel-jest": "^25.2.6",
     "babel-preset-jaid": "7.3.5",
