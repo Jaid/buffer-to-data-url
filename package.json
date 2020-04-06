@@ -1,1 +1,44 @@
-{"webpackConfigJaid":"nodeLib","version":"0.1.0","author":"Jaid <jaid.jsx@gmail.com> (https://github.com/Jaid)","dependencies":{"@absolunet/fss":"^1.6.2","@babel/runtime":"^7.8.0","appdata-path":"^1.0.0","filenamify":"^4.1.0","lodash":"^4.17.15"},"devDependencies":{"acorn":"^7.1.0","babel-jest":"^24.9.0","babel-preset-jaid":"7.3.1","browserslist-config-jaid-node":"^2.2.2","eslint":"^6.8.0","eslint-config-jaid":"1.42.0","jest":"^24.9.0","rimraf":"^3.0.0","webpack":"^4.41.5","webpack-config-jaid":"11.0.0"},"scripts":{"clean":"rimraf dist/","babel:prod":"rimraf dist/transpiled/production && NODE_ENV=production babel --out-dir dist/transpiled/production --source-maps true src","babel:dev":"rimraf dist/transpiled/development && NODE_ENV=development babel --out-dir dist/transpiled/development src","babel:test":"rimraf dist/transpiled/test && NODE_ENV=test babel --out-dir dist/transpiled/test src","build:prod":"NODE_ENV=production webpack","build:dev":"NODE_ENV=development webpack","test":"npm run build:prod && NODE_ENV=production MAIN=$(npx find-by-extension-cli js --fullPath --cwd dist/package/production) jest --runInBand","test:coverage":"npm run test:dev -- --coverage --json --outputFile=dist/jest/stats.json","test:dev":"NODE_ENV=test jest --runInBand","test:debug":"DEBUG=\"$(basename $PWD),$(basename $PWD):*\" NODE_ENV=test node --inspect=9229 node_modules/jest/bin/jest.js --runInBand","prepareActionJest":"npm run build:prod"},"name":"buffer-to-data-url","description":"Creates a base64-encoded data URL from a Buffer and a mimetype.","funding":"https://github.com/sponsors/jaid","repository":{"type":"git","url":"https://github.com/jaid/buffer-to-data-url"}}
+{
+  "webpackConfigJaid": "nodeLib",
+  "version": "0.1.0",
+  "author": "Jaid <jaid.jsx@gmail.com> (https://github.com/Jaid)",
+  "dependencies": {
+    "@absolunet/fss": "^1.6.2",
+    "@babel/runtime": "^7.8.0",
+    "appdata-path": "^1.0.0",
+    "filenamify": "^4.1.0",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "acorn": "^7.1.0",
+    "babel-jest": "^24.9.0",
+    "babel-preset-jaid": "7.3.1",
+    "browserslist-config-jaid-node": "^2.2.2",
+    "eslint": "^6.8.0",
+    "eslint-config-jaid": "1.42.0",
+    "jest": "^24.9.0",
+    "rimraf": "^3.0.0",
+    "webpack": "^4.41.5",
+    "webpack-config-jaid": "11.0.0"
+  },
+  "scripts": {
+    "clean": "rimraf dist/",
+    "babel:prod": "rimraf dist/transpiled/production && NODE_ENV=production babel --out-dir dist/transpiled/production --source-maps true src",
+    "babel:dev": "rimraf dist/transpiled/development && NODE_ENV=development babel --out-dir dist/transpiled/development src",
+    "babel:test": "rimraf dist/transpiled/test && NODE_ENV=test babel --out-dir dist/transpiled/test src",
+    "build:prod": "NODE_ENV=production webpack",
+    "build:dev": "NODE_ENV=development webpack",
+    "test": "npm run build:prod && NODE_ENV=production MAIN=$(npx find-by-extension-cli js --fullPath --cwd dist/package/production) jest --runInBand",
+    "test:coverage": "npm run test:dev -- --coverage --json --outputFile=dist/jest/stats.json",
+    "test:dev": "NODE_ENV=test jest --runInBand",
+    "test:debug": "DEBUG=\"$(basename $PWD),$(basename $PWD):*\" NODE_ENV=test node --inspect=9229 node_modules/jest/bin/jest.js --runInBand",
+    "prepareActionJest": "npm run build:prod"
+  },
+  "name": "buffer-to-data-url",
+  "description": "Creates a base64-encoded data URL from a Buffer and a mimetype.",
+  "funding": "https://github.com/sponsors/jaid",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaid/buffer-to-data-url"
+  }
+}
