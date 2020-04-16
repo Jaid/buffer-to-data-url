@@ -9,14 +9,14 @@
     "@absolunet/fsp": "^1.6.2",
     "acorn": "^7.1.1",
     "babel-jest": "^25.3.0",
-    "babel-preset-jaid": "7.3.5",
+    "babel-preset-jaid": "7.3.6",
     "browserslist-config-jaid-node": "^2.2.2",
     "eslint": "^6.8.0",
     "eslint-config-jaid": "1.49.0",
     "jest": "^25.3.0",
     "rimraf": "^3.0.2",
     "webpack": "^4.42.1",
-    "webpack-config-jaid": "11.7.2"
+    "webpack-config-jaid": "11.8.0"
   },
   "scripts": {
     "clean": "rimraf dist/",
