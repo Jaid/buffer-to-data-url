@@ -37,5 +37,17 @@
     "url": "https://github.com/jaid/buffer-to-data-url"
   },
   "homepage": "https://github.com/Jaid/buffer-to-data-url",
-  "keywords": []
+  "keywords": [
+    "base-64",
+    "base64",
+    "buffer",
+    "data-url",
+    "data-urls",
+    "lib",
+    "library",
+    "mimetype",
+    "node-buffer",
+    "util",
+    "utility"
+  ]
 }
