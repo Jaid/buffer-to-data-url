@@ -48,5 +48,6 @@
     "node-buffer",
     "util",
     "utility"
-  ]
+  ],
+  "type": "module"
 }
